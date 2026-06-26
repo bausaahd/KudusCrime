@@ -38,7 +38,7 @@ function Nav() {
             aria-hidden
           />
           <span className="text-display text-[15px] font-medium tracking-tight">
-            KUDUS CRIMAP
+            KUDUS CRIMEMAP
           </span>
         </div>
         <nav className="hidden items-center gap-8 text-[13px] text-[var(--ink-soft)] md:flex">
@@ -87,7 +87,7 @@ function Hero() {
             className="text-display text-[clamp(3rem,6vw,5.4rem)] text-foreground"
           >
             KUDUS{" "}
-            <span style={{ color: RED }}>CRIMAP</span>
+            <span style={{ color: RED }}>CRIMEMAP</span>
           <span className="mt-5 block max-w-3xl text-[clamp(1.55rem,2.5vw,2.25rem)] font-normal leading-snug text-[var(--ink-soft)]">
             WebGIS Analisis Spasial Kerawanan Kriminalitas di Kabupaten Kudus
           </span>
@@ -235,7 +235,7 @@ function Introduction() {
               Hasil penelitian diharapkan dapat menjadi bahan pertimbangan
               dalam pengambilan keputusan, mendukung pencegahan dan
               penanggulangan kriminalitas, serta menyediakan media informasi
-              spasial yang mudah diakses oleh pengguna melalui web map
+              spasial yang mudah diakses oleh pengguna melalui WebGIS
               interaktif.
             </p>
           </div>
@@ -322,12 +322,12 @@ function StudyArea() {
             </div>
 
             {/* Custom Legend */}
-            <div className="absolute bottom-11 left-3 rounded-lg border hairline bg-white/90 px-3 py-2 shadow-sm backdrop-blur">
-              <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]">
+            <div className="absolute bottom-11 left-3 rounded-lg border hairline bg-white/90 px-2 py-1 shadow-sm backdrop-blur">
+              <div className="mb-2 text-[6px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]">
                 Kepadatan Permukiman
               </div>
 
-              <div className="space-y-1.5">
+              <div className="space-y-1">
                 {[
                   { label: "Sangat Rendah", color: "#d1eeea" },
                   { label: "Rendah", color: "#96d0d1" },
@@ -340,7 +340,7 @@ function StudyArea() {
                       className="h-3 w-3 rounded-sm border border-black/10"
                       style={{ backgroundColor: item.color }}
                     />
-                    <span className="text-[11px] text-gray-700">
+                    <span className="text-[6px] text-gray-700">
                       {item.label}
                     </span>
                   </div>
@@ -350,7 +350,7 @@ function StudyArea() {
                 <div className="mt-2 border-t pt-2">
                   <div className="flex items-center gap-2">
                     <div className="h-[2px] w-4 rounded bg-gray-300" />
-                    <span className="text-[11px] text-gray-700">
+                    <span className="text-[6px] text-gray-700">
                       Jalan Utama
                     </span>
                   </div>
@@ -416,7 +416,7 @@ function Methodology() {
     t: "Integrasi Hasil",
     d: "Mengintegrasikan hasil analisis dan memvisualisasikannya melalui platform CRIMEMAP.",
     detail:
-      "Seluruh hasil analisis, mulai dari hotspot kriminalitas, karakteristik spasial kejadian, tingkat kerawanan desa, hingga hasil evaluasi PAI, diintegrasikan ke dalam platform WebGIS KUDUS CRIMAP. Integrasi ini memungkinkan pengguna mengeksplorasi informasi kriminalitas secara interaktif melalui peta, grafik, filter, dan berbagai fitur analisis dalam satu platform yang terhubung.",
+      "Seluruh hasil analisis, mulai dari hotspot kriminalitas, karakteristik spasial kejadian, tingkat kerawanan desa, hingga hasil evaluasi PAI, diintegrasikan ke dalam platform WebGIS KUDUS CRIMEMAP. Integrasi ini memungkinkan pengguna mengeksplorasi informasi kriminalitas secara interaktif melalui peta, grafik, filter, dan berbagai fitur analisis dalam satu platform yang terhubung.",
     image: "/images/md5.png",
       visual: "Dashboard CRIMEMAP"
   },
@@ -426,7 +426,7 @@ function Methodology() {
     t: "Uji Usabilitas",
     d: "Mengukur tingkat kemudahan penggunaan webmap melalui pengujian usabilitas.",
     detail:
-      "WebGIS KUDUS CRIMAP dievaluasi melalui pengujian usabilitas menggunakan kuesioner yang diberikan kepada pengguna. Pengujian ini bertujuan untuk mengukur lima aspek usabilitas (5Es), yaitu effective, efficient, engaging, error tolerant, dan easy to learn, sehingga dapat diketahui tingkat kemudahan penggunaan serta kualitas pengalaman pengguna dalam mengakses informasi kriminalitas melalui platform.",
+      "WebGIS KUDUS CRIMEMAP dievaluasi melalui pengujian usabilitas menggunakan kuesioner yang diberikan kepada pengguna. Pengujian ini bertujuan untuk mengukur lima aspek usabilitas (5Es), yaitu effective, efficient, engaging, error tolerant, dan easy to learn, sehingga dapat diketahui tingkat kemudahan penggunaan serta kualitas pengalaman pengguna dalam mengakses informasi kriminalitas melalui platform.",
     image: "/images/md6.png",
       visual: "Diagram Hasil Evaluasi 5Es"
   }
@@ -564,7 +564,7 @@ function MapSection() {
           <h2 className="max-w-4xl leading-tight text-[clamp(2rem,4.5vw,3.75rem)] font-bold">
             JELAJAHI{" "}
             KUDUS{" "}
-            <span className="text-red-600">CRIMAP</span>
+            <span className="text-red-600">CRIMEMAP</span>
           </h2>
           <button
             onClick={() => setIsFullscreen(true)}
@@ -605,7 +605,7 @@ function MapSection() {
               <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full" style={{ background: RED }} />
                 <span className="text-[13px] font-medium tracking-tight text-white">
-                  KUDUS CRIMAP
+                  KUDUS CRIMEMAP
                 </span>
               </div>
               <button
@@ -799,9 +799,7 @@ function Results() {
 
                   <div className="flex flex-col">
                     <div className="flex-1 rounded-xl border p-6">
-                      <h4 className="text-lg font-medium">
-                       Interpretasi Hasil
-                      </h4>
+                      
 
                     <p className="mt-4 leading-8 text-gray-600 text-justify">
                       {selectedResult.detail}
